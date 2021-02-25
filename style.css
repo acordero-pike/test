@@ -4,6 +4,8 @@
   height: 200px;
   border-style: solid;
   border-color: black;
+  background: url("https://img.freepik.com/vector-gratis/paisaje-forestal-pino_18591-51152.jpg?size=338&ext=jpg");
+  background-size : cover ;
 }
 
 .grid {
@@ -16,7 +18,10 @@
 }
 
 .mole {
-  background-image: url('mole.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXGoNUNXWmnNA-ayfycOjUvv0jXPUUeS_jA&usqp=CAU');
   background-size: cover;
-  cursos: url("https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Mjolnir.png/revision/latest?cb=20170520021822&path-prefix=es");
+   
+}
+.mole:hover {
+  cursor: url("thorhammer_thor_3370(1).ico"), auto;
 }

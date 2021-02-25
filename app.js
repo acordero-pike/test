@@ -28,7 +28,6 @@ square.forEach(id => {
 })
 
 
-
 function moveMole() {
   let timerId = null
   timerId = setInterval(randomSquare, 600)
@@ -43,22 +42,20 @@ function countDown() {
 
   if(currentTime === 0 ) {
     clearInterval(timerId)
-    var respuesta = confirm("Juego Terminado Desea Volver a Jugar?.")
-         
-if(respuesta)
-{
-  alert('Juego Terminado , Su puntaje es de ' + result)
-  location.reload()
-location.replace("https://ockelmann.github.io/ProyectoJS/index.html")
-}
+         alert("Juego Finalizado el total de puntos fue de "+ result)
+    alertify.confirm("Desea Repetir el juego ?.",
+    function() {
+      
+   location.reload()
+    },
+    function() {
+       
+      location.replace("https://ockelmann.github.io/ProyectoJS/index.html")
+  
+    }
+  );
+
  
-  else
-  {
-    alert('Juego Terminado , Saliendo de la pagina , Su puntaje es de ' + result)
-
-    location.replace("https://ockelmann.github.io/ProyectoJS/index.html")
-
-}    
   }
   
 }

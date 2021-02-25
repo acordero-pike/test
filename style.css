@@ -1,3 +1,6 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .square {
   width: 200px;
@@ -15,6 +18,7 @@
   align-content: center;
   width: 618px;
   height: 618px;
+  margin: 0 auto 0 auto;
 }
 
 .mole {
@@ -24,4 +28,27 @@
 }
 .mole:hover {
   cursor: url("thorhammer_thor_3370(1).ico"), auto;
+}
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+
+#time-left{
+  color: #F74B43;
+  font-size: 20px;
+}
+
+#score{
+  font-size: 20px;
+  color: #43ABF7;
+}
+
+.titulo{
+  font-size: 40px;
+}
+
+.titulo_dos{
+  font-size: 25px;
 }

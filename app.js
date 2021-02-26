@@ -27,7 +27,7 @@ function fondo(){
 
 }
 
-function sonarPajaros(hitPosition){
+function sonarPajaros(id.id){
 	var sonido = document.createElement("iframe");
 	sonido.setAttribute("src","sounds/smash.mp3");
 	document.body.appendChild(sonido);
@@ -36,7 +36,7 @@ function sonarPajaros(hitPosition){
 
 }
 
-function callarPajaros(hitPosition){
+function callarPajaros(id.id){
 	var iframe = document.getElementsByTagName("iframe");
 
 	if (iframe.length > 0){
@@ -51,8 +51,8 @@ square.forEach(id => {
     if(id.id === hitPosition){
       result = result + 1
       score.textContent = result
-      document.getElementById("play").addEventListener("click",sonarPajaros(hitPosition));
-      document.getElementById("play").addEventListener("mouseup",callarPajaros(hitPosition));	
+      document.getElementById("play").addEventListener("click",sonarPajaros(id.id));
+      document.getElementById("play").addEventListener("mouseup",callarPajaros(id.id));	
       hitPosition=null
    
     }

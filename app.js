@@ -74,7 +74,7 @@ function countDown() {
   timeLeft.textContent = currentTime
   currentTime--
   if(currentTime === 0 ) {
-     
+     timeLeft.textContent = currentTime
     clearInterval(timerId)
          alert("Juego Finalizado el total de puntos fue de "+ result)
     alertify.confirm("Desea Repetir el juego ?.",

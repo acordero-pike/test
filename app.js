@@ -22,20 +22,22 @@ function randomSquare() {
 
 
 function sonarPajaros(asd){
+	console.log(asd)
 	var sonido = document.createElement("iframe");
 	sonido.setAttribute("src","sounds/smash.mp3");
 	document.body.appendChild(sonido);
-	document.getElementById(asd).removeEventListener('click',sonarPajaros);
+	document.getElementById(asd).removeEventListener("click",sonarPajaros);
   		
 
 }
 
 function callarPajaros(asd){
+	console.log(asd)
 	var iframe = document.getElementsByTagName("iframe");
 
 	if (iframe.length > 0){
 		iframe[0].parentNode.removeChild(iframe[0]);
-		document.getElementById(asd).addEventListener('click',sonarPajaros);
+		document.getElementById(asd).addEventListener("click",sonarPajaros);
 	}
 }
 
@@ -45,8 +47,8 @@ square.forEach(id => {
     if(id.id === hitPosition){
       result = result + 1
       score.textContent = result
-      document.getElementById("play").addEventListener('click',sonarPajaros(id.id));
-      document.getElementById("play").addEventListener('mouseup',callarPajaros(id.id));	
+      document.getElementById("play").addEventListener("click",sonarPajaros(id.id));
+      document.getElementById("play").addEventListener("mouseup",callarPajaros(id.id));	
       hitPosition=null
    
     }

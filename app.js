@@ -19,29 +19,23 @@ function randomSquare() {
 }
 
 
-function fondo(){
-  var sonido = document.createElement("iframe");
-	sonido.setAttribute("src","sounds/theme.mp3");
-	document.body.appendChild(sonido);
-	 	
 
-}
 
-function sonarPajaros(id.id){
+function sonarPajaros(asd){
 	var sonido = document.createElement("iframe");
 	sonido.setAttribute("src","sounds/smash.mp3");
 	document.body.appendChild(sonido);
-	document.getElementById(id.id).removeEventListener("click",sonarPajaros);
+	document.getElementById(asd).removeEventListener("click",sonarPajaros);
   		
 
 }
 
-function callarPajaros(id.id){
+function callarPajaros(asd){
 	var iframe = document.getElementsByTagName("iframe");
 
 	if (iframe.length > 0){
 		iframe[0].parentNode.removeChild(iframe[0]);
-		document.getElementById(id.id).addEventListener("click",sonarPajaros);
+		document.getElementById(asd).addEventListener("click",sonarPajaros);
 	}
 }
 

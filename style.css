@@ -52,3 +52,8 @@
 .titulo_dos{
   font-size: 25px;
 }
+
+.sonido
+{
+  display:none;
+}
